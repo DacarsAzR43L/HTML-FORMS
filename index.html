@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+<header class="speaker-form-header">
+ 
+    <h1>
+        Guest Speaker Entry
+    </h1>
+
+    <p>
+        <em>
+        Want to speak at our conference? Fill up
+        this form. 
+      </em>
+    </p>
+
+</header>
+
+<form action="#" method="get" class="speaker-form">
+
+<div class="form-row">
+
+    <label for="full-name">Name</label>
+    <input type="text" id="full-name" name="full-name"/>
+
+</div>
+
+<div class="form-row">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="pup@example.com">
+
+</div>
+
+<div>
+
+    <fieldset class="legacy-form-row">
+        <legend>Type of Talk </legend>
+   
+        <input type="radio" name="talk-type" id="talk-type"
+                    value="main-stage" checked/>
+        
+        <label for="talk-type" class="radio-label">Main Stage</label>
+
+        <input type="radio" name="talk-type-2" id="talk-type-2"
+                    value="workshop"/>
+        
+        <label for="talk-type" class="radio-label">
+           Workshop
+        </label>
+
+    </fieldset>
+</div>
+
+<div class="form-row">
+    <label for="">T-shirt Size</label>
+
+    <select name="t-shirt" id="t-shirt" >
+        
+        <option value="">Extra Small</option>
+        <option value="">Small</option>
+        <option value="">Medium</option>
+        <option value="">Large</option>
+
+    </select>
+</div>
+
+<div class="form-row">
+
+    <label for="abstract">Abstract</label>
+    <textarea name="abstract" id="abstract"> </textarea>
+
+    <div class="instructions">
+        Describe your talk in 500 words or less.
+    </div>
+
+</div>
+
+
+<div class="form-row">
+    <label for="available" class="checkbox-label">
+
+        <input  id="available" name="available"
+            type="checkbox" value="is-available"/>
+            
+            <span> I am actually available the date of the
+                talk.
+         </span>
+
+    </label>
+</div>
+
+<div class="form-row">
+
+    <button>Submit</button>
+
+</div>
+
+
+</form>
+
+
+</body>
+</html>
